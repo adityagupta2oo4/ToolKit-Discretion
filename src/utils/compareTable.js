@@ -1,13 +1,3 @@
-/*
-Comparing the two table in right order
-earlier -
-    example -> (p->q) and (~q->p) are equivalent but the function return false
-    since it end up comparing -> 
-    table in wrong order - p|q|expression and q|p|expression which return false
-    
-    I have updated the code so that the comparission happens in correct sequence
-
-*/
 export const compareTables = (table1, expression1, table2, expression2) => {
   if (!Array.isArray(table1) || !Array.isArray(table2)) return false;
 
